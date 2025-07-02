@@ -21,12 +21,22 @@
     header {
         /* first lesson*/
         background-color: aquamarine;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
     }
     nav{
         background-color:rgb(19, 123, 89);
         position:sticky;
         top:0;
         z-index:2;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
     }
     button {
         position:fixed;
@@ -64,7 +74,9 @@
             background-color: rgb(255, 245, 205);
             font-size: 17px;
             font-weight: 900;
-            
+            display:flex;
+            justify-content: space-around;
+            align-items: stretch;
         }
         #teachers{
             box-shadow: 7px 9px 23px -3px darkgoldenrod;
@@ -91,12 +103,13 @@
 </head>
 <body>
     <div class="grid-container">
-        
+      <header> 
     <h1>
         Lilac Express Book Club
     </h1>
     <img src="library.jpeg" alt=""width='300'
     height="350">
+    </header>
     <nav>
     <ul>
         <li><a href="https://www.qbd.com.au">
