@@ -98,6 +98,33 @@
             box-shadow: 7px 9px 23px -3px black;
             text-align: left;
         }
+        header{
+         grid-area: header;  
+        }
+         nav{
+         grid-area: nav;  
+        }
+         #intro{
+         grid-area: intro;  
+        }
+         #bestsellers{
+         grid-area: bestsellers;  
+        }
+         #main-section{
+         grid-area: main-section;  
+        }
+         footer{
+         grid-area: footer;  
+        }
+        .grid-container{
+            display:grid;
+            grid-template-columns:auto auto auto auto auto;
+            grid-template-areas:
+            "header header header header intro"
+            "nav nav nav nav intro"
+            "main-section main-section main-section main-section bestsellers"
+            "footer footer footer footer footer"
+        }
     </style>
     
 </head>
@@ -171,7 +198,6 @@
                 </b>
 
             </p>
-            </div>
             <div id="videos"class="main-sectioncontent">
             <h2>
                 Videos
@@ -248,6 +274,7 @@
                 </tr>
             </table>
             </div>
+            </div>
             <div id="best-sellers"class="main-sectioncontent">
 <h2>
 Best Sellers
@@ -264,9 +291,13 @@ Best Sellers
 </li>
 </ol>
 </div>
-<button>
-    Submit
-</button>
+<footer>
+    <p><span>Contact Us:</span> Mrs. Caroline</p>
+    <p><span>Phone No:</span> +1124533</p>
+    <address>36th Main, Palm Street , Delhi-36035</address>
+</footer>
+<!--sixth lesson-->
+<button>Enquiry</button>
 </div>
 </body>
 </HTML>
